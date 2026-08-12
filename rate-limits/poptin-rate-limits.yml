@@ -1,0 +1,33 @@
+generated: '2026-08-12'
+method: searched
+source: https://help.poptin.com/en/, https://www.poptin.com/pricing/
+limit_count: 0
+note: >-
+  Poptin documents NO API rate limits. There is no developer portal, no API reference,
+  and no page in the help center that names a request ceiling, a window, a burst
+  allowance, a 429 behaviour, or any RateLimit-* / X-RateLimit-* / Retry-After response
+  header. The only published ceilings are commercial PLAN QUOTAS (monthly visitors,
+  active contacts, monthly emails) which are recorded in plans/poptin-plans-pricing.yml
+  — those are billing meters, not runtime rate limits, and no header exposes them.
+  An honest zero.
+limits: []
+response_headers:
+  documented: false
+  observed: []
+  note: >-
+    The one live JSON endpoint reachable anonymously on the API host
+    (https://app.popt.in/api/display/limitLogs/) answered 401 on 2026-08-12 and returned
+    no rate-limit headers to observe.
+exhaustion:
+  status_code: null
+  documented: false
+quota_ceilings_are_commercial:
+- metric: monthly visitors
+  applies_to: popup/form plans
+  see: plans/poptin-plans-pricing.yml
+- metric: active contacts
+  applies_to: Growth (email) plans
+  see: plans/poptin-plans-pricing.yml
+- metric: emails per month
+  applies_to: Free Growth plan (500/month)
+  see: plans/poptin-plans-pricing.yml

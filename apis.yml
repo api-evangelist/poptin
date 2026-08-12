@@ -1,19 +1,67 @@
 aid: poptin
 name: Poptin
-description: Poptin is a company surfaced via the API Evangelist marketing integration graph — named as
-  an integration by 2 members of the programmable-marketing cohort — and added to the network as a stub
-  for full-pipeline profiling.
+description: >-
+  Poptin is an Israeli-founded, no-code conversion and lifecycle marketing platform that
+  bundles website popups, bars, embedded forms, coupons, email campaigns, email automation,
+  contact management, audience segmentation and website tracking into a single SaaS product
+  aimed at ecommerce stores, SaaS companies, agencies and small businesses. Delivery is a
+  hosted embed script (cdn.popt.in/pixel.js) installed via first-party plugins for WordPress,
+  Magento 2, Craft CMS, SilverStripe, TYPO3, OctoberCMS, Contao, Shopify, Wix and Google Tag
+  Manager. Its developer surface is client-side and event-shaped rather than REST: documented
+  DOM CustomEvents (poptinView, poptinClose, poptinSubmit, couponCopy) with a published
+  event.detail field set, named global callbacks, and an outbound per-popup Webhooks
+  integration that posts lead data to a subscriber URL. Poptin publishes no public API
+  reference, no OpenAPI, and no developer portal; a Make/Zapier API key is issued from
+  account settings for its two automation connectors.
+image: https://cdn.popt.in/poptin-website/images/common/header/site-logo-dark.svg
 url: https://raw.githubusercontent.com/api-evangelist/poptin/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:marketing-integration-graph
-x-tier: stub
-x-tier-reason: harvest
+x-tier: enriched
+x-tier-reason: enrichment-pipeline
 specificationVersion: '0.20'
 created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
-apis: []
+- Marketing
+- Email Marketing
+- Marketing Automation
+- Lead Generation
+- Conversion Optimization
+- Forms
+- Popups
+- Contact Management
+- Webhooks
+- Ecommerce
+- SaaS
+apis:
+- name: Poptin Embed & Events
+  description: >-
+    Poptin's developer-facing surface. The hosted embed script renders popups, bars,
+    sidebars, full-screen and mobile surfaces plus embedded forms into a host page, fires
+    documented DOM CustomEvents with a published event.detail field set, and invokes named
+    global callbacks. Conversions can be forwarded outbound via the per-poptin Webhooks
+    integration. There is no published REST reference and no machine-readable contract; the
+    application host does serve an authenticated internal /api/display/* surface used by the
+    embed itself, observed returning 401 application/json, but Poptin does not document it.
+  humanURL: https://help.poptin.com/en/article/dom-events-how-it-works-1e32jhj/
+  baseURL: https://app.popt.in
+  tags:
+  - Popups
+  - Forms
+  - Webhooks
+  - Events
+  - Marketing
+  properties:
+  - type: Documentation
+    url: https://help.poptin.com/en/article/dom-events-how-it-works-1e32jhj/
+  - type: Components
+    url: components/poptin-components.yml
+  - type: Webhooks
+    url: asyncapi/poptin-webhooks.yml
+  - type: Authentication
+    url: authentication/poptin-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -22,7 +70,87 @@ maintainers:
 common:
 - type: Website
   url: https://poptin.com/
+- type: Documentation
+  url: https://help.poptin.com/en/
+- type: HelpCenter
+  url: https://help.poptin.com/en/
+- type: GettingStarted
+  url: https://help.poptin.com/en/article/create-your-first-poptin-7vpqx1/
+- type: Support
+  url: https://www.poptin.com/contact/
+- type: Blog
+  url: https://www.poptin.com/blog/
+- type: BlogRSS
+  url: https://www.poptin.com/blog/feed/
+- type: Pricing
+  url: https://www.poptin.com/pricing/
+- type: SignUp
+  url: https://app.popt.in/register
+- type: Login
+  url: https://app.popt.in/login
+- type: TermsOfService
+  url: https://www.poptin.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.poptin.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/poptins
+- type: Integrations
+  url: https://www.poptin.com/integrations/
+- type: ChangeLog
+  url: https://headwayapp.co/poptin-com-updates
+- type: ChangeLog
+  url: changelog/poptin-changelog.yml
+- type: Packages
+  url: packages/poptin-packages.yml
+- type: LLMsTxt
+  url: llms/poptin-llms.txt
+- type: Components
+  url: components/poptin-components.yml
+- type: Webhooks
+  url: asyncapi/poptin-webhooks.yml
+- type: Authentication
+  url: authentication/poptin-authentication.yml
+- type: Plans
+  url: plans/poptin-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/poptin-rate-limits.yml
+- type: Lifecycle
+  url: lifecycle/poptin-lifecycle.yml
+- type: Conformance
+  url: conformance/poptin-conformance.yml
+- type: Compliance
+  url: security/poptin-trust-center.yml
+- type: TrustCenter
+  url: security/poptin-trust-center.yml
+- type: DomainSecurity
+  url: security/poptin-domain-security.yml
 x-vouched-by:
 - Drip
 - MailerLite
 x-vouch-count: 2
+x-enrichment:
+  date: '2026-08-12'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1
+x-coverage:
+  state: covered
+  reason: enrichment-complete
+  detail: >-
+    Full pass completed. Poptin publishes a real llms.txt, a dated changelog with an RSS
+    feed, first-party CMS plugins in Packagist and WordPress.org, an ISO/IEC 27001:2013
+    certification claim, a documented client-side DOM event surface and an outbound
+    webhook integration — all captured. What it does NOT publish, confirmed by probe, is
+    any machine-readable contract: no OpenAPI, AsyncAPI, GraphQL SDL, Postman collection
+    or developer portal on any host, even though app.popt.in answers 401
+    application/json on the internal /api/display/ endpoints its own pixel.js calls.
+  evidence:
+  - url: https://www.poptin.com/llms.txt
+    status: 200
+  - url: https://app.popt.in/api/display/limitLogs/
+    status: 401
+  - url: https://app.popt.in/openapi.json
+    status: 404
+  - url: https://www.poptin.com/developers
+    status: 404
+  checked: '2026-08-12'

@@ -1,0 +1,105 @@
+generated: '2026-08-12'
+method: searched
+source: https://www.poptin.com/pricing/
+secondary_source: https://www.poptin.com/llms.txt
+currency: USD
+billing_periods:
+- monthly
+- annual
+note: >-
+  Poptin runs TWO parallel plan ladders since the June 2026 "Poptin Email" launch: the
+  original popup/form plans metered on monthly VISITORS, and the newer Growth (email)
+  plans metered on ACTIVE CONTACTS. Prices and quotas below are transcribed from the
+  provider's own published pricing table (mirrored verbatim in their llms.txt). None of
+  these plans grant API access — Poptin publishes no API product or API-tier pricing.
+plan_count: 7
+plan_families:
+- family: popups-and-forms
+  metric: monthly visitors
+  plans:
+  - name: Free
+    price: 0
+    currency: USD
+    period: month
+    quota:
+      visitors_per_month: 1000
+      domains: 1
+    limits:
+      branding: Poptin branding shown
+    overage: null
+  - name: Basic
+    price: 25
+    price_annual_per_month: 20
+    currency: USD
+    period: month
+    quota:
+      visitors_per_month: 10000
+      popups: unlimited
+    limits:
+      branding: unbranded popups
+      targeting: advanced targeting
+    overage: null
+  - name: Pro
+    price: 59
+    price_annual_per_month: 47
+    currency: USD
+    period: month
+    quota:
+      visitors_per_month: 50000
+      domains: 4
+    limits:
+      targeting: advanced targeting, automation and optimization tools
+    overage: null
+  - name: Agency
+    price: 119
+    price_annual_per_month: 95
+    currency: USD
+    period: month
+    quota:
+      visitors_per_month: higher (unstated numeric)
+      domains: unlimited
+    limits:
+      users: user management
+      support: premium support
+    overage: null
+- family: growth-email
+  metric: active contacts
+  metric_definition: >-
+    "Active contacts include subscribed contacts and contacts with an unconfirmed
+    subscription status. Unsubscribed, bounced, complained, and blocklisted contacts are
+    not included in the active contact count."
+  plans:
+  - name: Free
+    price: 0
+    currency: USD
+    period: month
+    quota:
+      active_contacts: 250
+      emails_per_month: 500
+    overage: null
+  - name: Growth
+    price_from: 19
+    currency: USD
+    period: month
+    quota:
+      active_contacts: tiered — price scales with active contact tier
+      emails_per_month: unlimited
+    overage: null
+  - name: Enterprise
+    price: null
+    pricing: custom
+    currency: USD
+    quota:
+      active_contacts: custom limits
+    limits:
+      support: dedicated support, migration assistance, consultation, tailored onboarding
+      security: advanced security
+    overage: null
+api_access:
+  sold_as_a_plan_feature: false
+  note: >-
+    No plan tier lists API access, API call quotas, or API rate limits. The Make/Zapier
+    API key referenced in the help center is issued from account settings, not purchased.
+contract_terms:
+  long_term_contract_required: false
+  note: '"No long-term contracts required" per the published pricing notes.'

@@ -1,0 +1,55 @@
+generated: '2026-08-12'
+method: searched
+source: https://help.poptin.com/en/article/how-to-integrate-your-poptin-with-webhooks-1sl77wj/
+sources:
+- https://help.poptin.com/en/article/how-to-integrate-your-poptin-with-webhooks-1sl77wj/
+- https://headwayapp.co/poptin-com-updates/new-integration-webhooks-308841
+- https://help.poptin.com/en/article/how-to-integrate-your-poptin-to-make-etfiwq/
+- https://help.poptin.com/en/article/how-to-integrate-your-poptin-to-zapier-9exnpm/
+asyncapi_published: false
+note: >-
+  Poptin ships NO AsyncAPI. It does ship a real outbound webhook surface, launched
+  2025-02-02, and this file is the honest catalog of it. The webhook is configured
+  PER POPTIN, not per account: on the popup's "Email and integrations" panel you add the
+  Webhooks integration, paste a destination URL and click Approve, at which point Poptin
+  sends a test lead. Poptin publishes NO payload schema, NO field list, NO HTTP method,
+  NO signing/verification scheme, NO retry policy and NO delivery-header contract for it.
+  That gap is the finding — it is not filled in here, and no schema has been invented.
+transport: https-post-to-subscriber-url
+delivery: per-poptin configuration, one destination URL per popup/form
+configuration_path: Poptin dashboard > (popup) Design > Email and integrations > Webhooks
+events:
+- name: lead
+  trigger: a visitor converts on a poptin (popup or form submission)
+  payload_schema_published: false
+  note: >-
+    The only event Poptin's own documentation names. The Zapier connector exposes the
+    same thing as a "New Lead" trigger. Field names are not published anywhere.
+- name: test lead
+  trigger: firing on webhook approval, to verify the destination URL
+  payload_schema_published: false
+security:
+  signature: not documented
+  shared_secret: not documented
+  auth_header: not documented
+  note: >-
+    No verification mechanism is published, so a receiver has no documented way to prove
+    a delivery came from Poptin.
+delivery_semantics:
+  retries: not documented
+  ordering: not documented
+  timeout: not documented
+  dead_letter: not documented
+related_client_side_events:
+  note: >-
+    Poptin's richer, fully documented event surface is CLIENT-SIDE, not server-side —
+    DOM CustomEvents (poptinView / poptinClose / poptinSubmit / couponCopy) with a
+    documented `event.detail` field set. Those are cataloged in
+    components/poptin-components.yml, because they are browser events, not webhooks.
+  see: components/poptin-components.yml
+api_key:
+  name: Make/Zapier API key
+  location: Poptin dashboard > Settings > Profile
+  note: >-
+    Issued for the Make and Zapier connectors. The API it authenticates is not publicly
+    documented — see authentication/poptin-authentication.yml.

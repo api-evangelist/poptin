@@ -1,0 +1,56 @@
+generated: '2026-08-12'
+method: searched
+source: https://help.poptin.com/en/article/how-to-integrate-your-poptin-to-make-etfiwq/
+sources:
+- https://help.poptin.com/en/article/how-to-integrate-your-poptin-to-make-etfiwq/
+- https://help.poptin.com/en/article/how-to-integrate-your-poptin-to-zapier-9exnpm/
+- https://app.popt.in/login
+note: >-
+  Derived-from-OpenAPI was not possible: Poptin publishes no OpenAPI, no Swagger, no
+  GraphQL SDL and no API reference of any kind (see well-known/poptin-well-known.yml and
+  the x-coverage block in apis.yml). This profile is what the provider actually documents
+  plus one anonymous live probe. Nothing about token format, header name, expiry, scopes
+  or refresh is published by Poptin, so nothing about them is asserted here.
+openapi_security_schemes: []
+schemes:
+- id: make-zapier-api-key
+  type: apiKey
+  name: Make/Zapier API key
+  issued_from: Poptin dashboard > Settings > Profile
+  used_by:
+  - Make (make.com) connector
+  - Zapier connector
+  transport: not documented
+  header_name: not documented
+  rotation: not documented
+  expiry: not documented
+  scopes: none published
+  documented_reference: false
+  note: >-
+    Poptin's help center tells a user where to COPY this key, and nothing else. No base
+    URL, no endpoint, no header name, no example request is published alongside it.
+- id: session-login
+  type: http
+  name: Application session login
+  url: https://app.popt.in/login
+  note: >-
+    Human sign-in to the Poptin application. Registration at https://app.popt.in/register.
+    Not an API credential.
+oauth2:
+  supported: false
+  note: >-
+    No OAuth authorization or token endpoint is published by Poptin, and
+    /.well-known/oauth-authorization-server returns 404 on both hosts. Third-party
+    integration-guide sites assert an OAuth flow at api.poptin.com — that hostname does
+    not resolve in DNS, so those claims are not carried into this catalog.
+scopes_artifact: not applicable — no OAuth surface
+live_probe:
+  url: https://app.popt.in/api/display/limitLogs/
+  method: GET
+  status: 401
+  content_type: application/json
+  fetched: '2026-08-12'
+  interpretation: >-
+    The application host does enforce authentication on its internal /api/ surface and
+    answers with JSON, which confirms a real authenticated API exists. What it does not
+    do is document it.

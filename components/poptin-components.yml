@@ -1,0 +1,118 @@
+generated: '2026-08-12'
+method: searched
+source: https://help.poptin.com/en/article/dom-events-how-it-works-1e32jhj/
+sources:
+- https://help.poptin.com/en/article/dom-events-how-it-works-1e32jhj/
+- https://help.poptin.com/en/article/can-i-track-poptin-views-poptinvisiblepoptinid-callbacks-1l74pue/
+- https://cdn.popt.in/pixel.js
+note: >-
+  Poptin's developer surface is a CLIENT-SIDE one. There is no server API to call; the
+  product is delivered as a hosted embed script that renders popups, bars and forms into
+  the host page, fires DOM CustomEvents, and calls named global callbacks. Everything
+  below is documented by Poptin in its own help center — nothing here is inferred.
+loader:
+  name: pixel.js
+  url: https://cdn.popt.in/pixel.js
+  snippet: '<script src="https://cdn.popt.in/pixel.js?id=<POPTIN_ID>&for=site" async></script>'
+  params:
+  - name: id
+    description: the Poptin account/site install identifier
+  - name: 'for'
+    description: install context (observed value "site")
+  versioned: false
+  note: unpinned — see packages/poptin-packages.yml for why that matters
+families:
+- family: rendered-surfaces
+  description: Surface types the embed renders into the host page.
+  components:
+  - name: Lightbox
+  - name: Bar
+  - name: Sidebar
+  - name: FullScreen
+  - name: Mobile
+  - name: Embedded form
+    note: inline form embedded into page markup
+  - name: Gamified popup
+    note: exposes prize_label on submit events
+- family: dom-events
+  description: >-
+    CustomEvents dispatched on `document`, listenable from any tag manager or first-party
+    script. Added 2023-03-21 per the changelog.
+  listener_example: |
+    document.addEventListener("poptinSubmit", function(event){
+        console.log(event.detail);
+    }, false);
+  components:
+  - name: poptinView
+    fires_when: a poptin / form is viewed
+  - name: poptinClose
+    fires_when: a poptin is closed from the X button or the Close button
+  - name: poptinSubmit
+    fires_when: a poptin / form is submitted from the Submit button or a Link button
+  - name: couponCopy
+    fires_when: a coupon button is clicked
+  event_detail_fields:
+  - field: detail.poptin_id
+    description: unique popup/form ID
+  - field: detail.poptin_name
+    description: name of the popup/form
+  - field: detail.poptin_target
+    description: 'lead | click | social_proof'
+  - field: detail.poptin_type
+    description: 'Bar | Sidebar | Lightbox | Mobile | FullScreen'
+  - field: detail.account_id
+    description: Poptin user account ID
+  - field: detail.event_name
+    description: event type identifier
+  - field: detail.button_text
+    description: text of the Submit/Link button that was clicked
+  - field: detail.coupon_code
+    description: coupon code that was copied
+  - field: detail.prize_label
+    description: prize label (gamified popups only)
+  - field: detail.shopify.*
+    description: >-
+      Shopify product context — button_text, product_url, product_name, product_id,
+      variant_id, buttons_action
+- family: global-callbacks
+  description: >-
+    Named global functions the embed invokes if they are defined ABOVE the install code,
+    inside the same custom HTML tag. The pre-DOM-events integration path; still documented.
+  components:
+  - name: poptinVisible
+    signature: function poptinVisible(poptin_id) { }
+    fires_when: a poptin is displayed
+  - name: onpoptinClose
+    signature: function onpoptinClose(poptin_id) { }
+    fires_when: a poptin is closed
+  - name: onpoptinSubmit
+    signature: function onpoptinSubmit(poptin_id) { }
+    fires_when: a poptin form is submitted
+  dom_hooks:
+  - selector: '.poptin-popup[data-poptin-id="<poptin_id>"]'
+    description: root element of a rendered poptin, keyed by poptin_id
+  - selector: '.poptin-form-submit-button'
+    description: submit button inside a rendered poptin form
+runtime_endpoints_observed:
+  note: >-
+    Endpoints the public embed script calls at runtime, extracted from the verbatim
+    https://cdn.popt.in/pixel.js served on 2026-08-12. These are UNDOCUMENTED internal
+    endpoints on the application host — recorded as observed fact, NOT as a published
+    contract. No OpenAPI is derived from them.
+  host: https://app.popt.in
+  paths:
+  - /api/display/
+  - /api/display/click/
+  - /api/display/conversion/
+  - /api/display/limitLogs/
+  - /api/display/validation-emails
+  - /api/display/shopify/check-product-collection/
+  - /api/display/shopify/get-price-rules/
+  - /api/display/shopify/product-recommendation/
+  - /api/display/shopify/save/browse-abandonment
+  - /api/display/wix/product-recommendation/
+  probe:
+    url: https://app.popt.in/api/display/limitLogs/
+    status: 401
+    content_type: application/json
+    fetched: '2026-08-12'

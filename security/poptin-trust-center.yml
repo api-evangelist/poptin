@@ -1,0 +1,75 @@
+generated: '2026-08-12'
+method: searched
+source: https://headwayapp.co/poptin-com-updates/poptin-is-is0-27001-compliant-279473
+sources:
+- https://headwayapp.co/poptin-com-updates/poptin-is-is0-27001-compliant-279473
+- https://www.poptin.com/llms.txt
+- https://www.poptin.com/gdpr/
+- https://www.poptin.com/privacy-policy/
+trust_center_url: null
+note: >-
+  Poptin operates NO trust center or trust portal — there is no trust.poptin.com, no
+  security page, and no request-a-report flow. (https://www.poptin.com/security/ returns
+  200 but is a marketing landing page selling popups to security-industry websites, not
+  a security posture page; it is deliberately not cited as evidence here.) What Poptin
+  does publish is a named, numbered ISO 27001 certification announcement in its own
+  changelog, restated in its own llms.txt, plus a GDPR program page. That is a real
+  first-party compliance claim, so it is recorded — but no certificate document, audit
+  report, subprocessor list, pen-test summary or SLA is published anywhere.
+certifications:
+- name: ISO/IEC 27001:2013
+  status: claimed-certified
+  certificate_number: '1122094'
+  announced: '2023-11-20'
+  evidence: https://headwayapp.co/poptin-com-updates/poptin-is-is0-27001-compliant-279473
+  auditor_named: false
+  certificate_document_published: false
+  quote: 'We are proud to announce that Poptin is now ISO 27001 certified — ISO/IEC 27001:2013, Certificate number: 1122094'
+- name: ISO 27001 compliant infrastructure
+  status: claimed
+  evidence: https://www.poptin.com/llms.txt
+  note: restated by the provider in its own llms.txt under "Security & Compliance"
+regulatory_programs:
+- name: GDPR
+  status: program-published
+  url: https://www.poptin.com/gdpr/
+  capabilities:
+  - consent checkboxes
+  - double opt-in
+  - subscriber preference management
+  - unsubscribe management
+  - contact deletion (manual and bulk)
+  - automated data retention settings
+  - contact export
+  evidence: https://www.poptin.com/llms.txt
+not_claimed:
+- SOC 2
+- PCI DSS
+- HIPAA
+- FedRAMP
+- ISO 27017
+- ISO 27018
+security_practices_claimed:
+  source: https://www.poptin.com/llms.txt
+  items:
+  - encrypted data transmission
+  - account management controls
+  - access management controls
+  - secure authentication systems
+  - continuous monitoring and maintenance
+email_authentication_claimed:
+  source: https://www.poptin.com/llms.txt
+  items:
+  - SPF support
+  - DKIM support
+  - DMARC support
+  cross_check: >-
+    Independently confirmed at the DNS layer for poptin.com — SPF present, DMARC present
+    with p=quarantine. See security/poptin-domain-security.yml.
+gaps:
+- no trust center or trust portal
+- no published certificate document or audit report
+- no subprocessor list
+- no penetration-test summary
+- no uptime SLA
+- no security contact and no /.well-known/security.txt (all 404 — see well-known/)

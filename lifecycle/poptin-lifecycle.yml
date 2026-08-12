@@ -1,0 +1,51 @@
+generated: '2026-08-12'
+method: searched
+source: https://headwayapp.co/poptin-com-updates
+sources:
+- https://headwayapp.co/poptin-com-updates
+- https://help.poptin.com/en/
+- https://www.poptin.com/terms-of-service/
+note: >-
+  Poptin runs a product lifecycle, not an API lifecycle. It publishes a dated changelog
+  and a major product version line ("Poptin 3.0 is live!", 2024-11-16), but there is no
+  API version, no versioning policy, no deprecation policy, no Sunset/Deprecation header
+  contract, no SLA and no status page. Recorded as absent rather than omitted.
+versioning:
+  scheme: none
+  api_version: null
+  url_versioning: false
+  header_versioning: false
+  policy_published: false
+  product_release_line: 'Poptin 3.0 (2024-11-16); "Poptin Email" launch 2026-06-26'
+deprecation:
+  policy_published: false
+  notice_period: null
+  sunset_header: false
+  deprecation_header: false
+  rfc_8594: false
+  deprecated_operations: []
+  note: >-
+    No entry in the 20-item changelog feed announces a removal, breaking change or
+    deprecation. There is nothing to point a Deprecation pointer at.
+status_page:
+  url: null
+  published: false
+  probes:
+  - url: https://status.poptin.com/
+    result: NXDOMAIN
+  - url: https://poptin.statuspage.io/
+    result: 'redirects to atlassian.com/software/statuspage — no Poptin page exists'
+  note: >-
+    No status page, no uptime history, no incident feed. No StatusPage pointer is emitted.
+sla:
+  published: false
+  uptime_commitment: null
+  note: Enterprise plans advertise "dedicated support" but no numeric SLA is published.
+support:
+  help_center: https://help.poptin.com/en/
+  contact: https://www.poptin.com/contact
+  premium_support_tier: Agency and Enterprise plans
+changelog:
+  url: https://headwayapp.co/poptin-com-updates
+  feed: https://headwayapp.co/poptin-com-updates/rss
+  artifact: changelog/poptin-changelog.yml

@@ -1,0 +1,146 @@
+generated: '2026-08-12'
+method: searched
+source: https://packagist.org/?query=poptin, https://api.wordpress.org/plugins/info/1.0/poptin.json, https://github.com/poptins
+note: >-
+  Poptin publishes NO API client SDK in any language registry — npm, PyPI, RubyGems,
+  crates.io, NuGet, Maven Central and pkg.go.dev all return nothing first-party. What
+  Poptin does ship first-party is a set of CMS/platform INSTALL PLUGINS whose job is to
+  inject the hosted embed script (https://cdn.popt.in/pixel.js) into a site. They are
+  integration packages, not API client libraries, so no `SDKs` pointer is emitted for
+  them — see the currency notes below, most of the estate has not shipped since 2020-2021.
+registries_checked:
+- registry: npm
+  query: poptin
+  first_party_found: false
+  note: only third-party "pop-exit-component" (0.1.1, 2024-06-05), unaffiliated
+- registry: pypi
+  query: poptin
+  first_party_found: false
+  note: https://pypi.org/pypi/poptin/json returned 404
+- registry: rubygems
+  first_party_found: false
+- registry: crates.io
+  first_party_found: false
+- registry: nuget
+  first_party_found: false
+- registry: maven-central
+  first_party_found: false
+- registry: pkg.go.dev
+  first_party_found: false
+- registry: packagist
+  query: poptin
+  first_party_found: true
+- registry: wordpress.org
+  query: poptin
+  first_party_found: true
+packages:
+- language: php
+  registry: packagist
+  name: poptin/module-magento2
+  url: https://packagist.org/packages/poptin/module-magento2
+  source: https://github.com/poptins/magento2
+  install: composer require poptin/module-magento2
+  official: true
+  kind: cms-plugin
+  platform: Magento 2
+  license: GPL-3.0
+  version: 1.1.9
+  published: '2026-07-15'
+  downloads: 7074
+- language: php
+  registry: packagist
+  name: poptin/poptin
+  url: https://packagist.org/packages/poptin/poptin
+  source: https://github.com/poptins/craftcms-poptin-app
+  install: composer require poptin/poptin
+  official: true
+  kind: cms-plugin
+  platform: Craft CMS
+  license: null
+  version: 2.0.6
+  published: '2025-04-18'
+  downloads: 1563
+- language: php
+  registry: packagist
+  name: poptin/silverstripe-popups-forms
+  url: https://packagist.org/packages/poptin/silverstripe-popups-forms
+  source: https://github.com/poptins/poptin-silverstripe-popups-forms
+  install: composer require poptin/silverstripe-popups-forms
+  official: true
+  kind: cms-plugin
+  platform: SilverStripe
+  license: BSD-3-Clause
+  version: 1.0.6
+  published: '2020-07-17'
+  downloads: 19
+  note: no release in over five years
+- language: php
+  registry: wordpress.org
+  name: poptin
+  url: https://wordpress.org/plugins/poptin/
+  install: WordPress plugin directory — search "Poptin"
+  official: true
+  kind: cms-plugin
+  platform: WordPress
+  version: 1.3.13
+  published: '2026-08-12'
+  downloads: 543199
+  note: the most actively maintained first-party package; tested to WordPress 7.0.4
+- language: php
+  registry: github
+  name: poptin_typo3
+  url: https://github.com/poptins/poptin_typo3
+  official: true
+  kind: cms-plugin
+  platform: TYPO3
+  version: null
+  published: '2020-07-07'
+  note: >-
+    not published to any package registry; version read as null because no registry
+    metadata endpoint exists. Date is the last push to the first-party repository.
+- language: php
+  registry: github
+  name: poptin-octobercms
+  url: https://github.com/poptins/poptin-octobercms
+  official: true
+  kind: cms-plugin
+  platform: OctoberCMS
+  license: MIT
+  version: null
+  published: '2021-05-10'
+  note: repository-only distribution, no registry metadata to read a version from
+- language: php
+  registry: github
+  name: contao-poptin
+  url: https://github.com/poptins/contao-poptin
+  official: true
+  kind: cms-plugin
+  platform: Contao
+  version: null
+  published: '2021-01-13'
+  note: repository-only distribution, no registry metadata to read a version from
+- language: javascript
+  registry: github
+  name: poptin-tagmanager
+  url: https://github.com/poptins/poptin-tagmanager
+  official: true
+  kind: tag-manager-template
+  platform: Google Tag Manager
+  license: Apache-2.0
+  version: null
+  published: '2019-12-23'
+  note: repository-only distribution; last push 2019
+- language: javascript
+  registry: cdn
+  name: pixel.js
+  url: https://cdn.popt.in/pixel.js
+  install: '<script src="https://cdn.popt.in/pixel.js?id=<POPTIN_ID>&for=site" async></script>'
+  official: true
+  kind: embed-loader
+  version: null
+  published: null
+  note: >-
+    The real distribution channel for every Poptin install. It is served UNPINNED from
+    the provider CDN — the URL carries no version segment and no jsDelivr/unpkg metadata
+    endpoint exists for it, so a consumer cannot tell which build they are executing.
+    Observed 341,808 bytes on 2026-08-12; that is a size, not a version.
