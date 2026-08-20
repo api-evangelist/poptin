@@ -32,6 +32,19 @@ tags:
 - Forms
 - Popups
 - Contact Management
+- Webhook
+- E-Commerce
+- Software-as-a-Service
+tags_raw:
+- Company
+- Marketing
+- Email Marketing
+- Marketing Automation
+- Lead Generation
+- Conversion Optimization
+- Forms
+- Popups
+- Contact Management
 - Webhooks
 - Ecommerce
 - SaaS
@@ -48,6 +61,12 @@ apis:
   humanURL: https://help.poptin.com/en/article/dom-events-how-it-works-1e32jhj/
   baseURL: https://app.popt.in
   tags:
+  - Popups
+  - Forms
+  - Webhook
+  - Event
+  - Marketing
+  tags_raw:
   - Popups
   - Forms
   - Webhooks
