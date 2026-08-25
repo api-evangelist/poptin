@@ -1,0 +1,21 @@
+{
+  "repo": "poptin",
+  "feeds": [
+    {
+      "source": "https://www.poptin.com/contact/",
+      "feed_url": "https://www.poptin.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.poptin.com/blog/",
+      "feed_url": "https://www.poptin.com/blog/feed/",
+      "title": "",
+      "saved": 3,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 3,
+  "fetched": "2026-08-22T20:20:02Z"
+}
