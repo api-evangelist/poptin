@@ -13,6 +13,17 @@ description: >-
   integration that posts lead data to a subscriber URL. Poptin publishes no public API
   reference, no OpenAPI, and no developer portal; a Make/Zapier API key is issued from
   account settings for its two automation connectors.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.popt.in/poptin-website/images/common/header/site-logo-dark.svg
 url: https://raw.githubusercontent.com/api-evangelist/poptin/refs/heads/main/apis.yml
 x-type: company
