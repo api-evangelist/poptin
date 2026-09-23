@@ -1,0 +1,29 @@
+# Front Door AI Index — poptin — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: poptin
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: poptin.com
+  final_host: www.poptin.com
+  ownership: own
+  owner: poptin
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 5
+  host_score: 5
+  density: 1.91
+  words: 2621
+  tiers:
+    agentic: 3
+    core: 2
+    model: 0
+  ambiguous: 14
+  top_terms:
+    automation: 8
+    smart: 6
+    AI: 2
+    chatbot: 2
+    prompts: 1
