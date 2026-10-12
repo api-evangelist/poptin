@@ -1,0 +1,415 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/poptin/integrations
+checked:
+- https://composio.dev/toolkits/poptin
+- https://monid.ai/tools/poptin
+- https://n8n.io/integrations/poptin/
+- https://zapier.com/apps/poptin/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: poptin
+  url: https://zapier.com/apps/poptin/integrations
+  external_url: https://www.poptin.com/
+  partner_tier: SILVER
+  triggers:
+  - key: add_contact
+    label: New Lead
+  actions: []
+  searches: []
+edges:
+- partner_name: Brevo
+  partner: brevo
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/brevo
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://www.sendinblue.com/?utm_medium=plugin&utm_source=zapier
+- partner_name: Mailchimp
+  partner: mailchimp
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/mailchimp
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://mailchimp.com/
+- partner_name: HubSpot
+  partner: hubspot
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/hubspot
+  direction: third-party
+  category: Marketing Automation
+  partner_url: http://www.hubspot.com/
+- partner_name: Pipedrive
+  partner: pipedrive
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/pipedrive
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://pipedrive.com/
+- partner_name: ActiveCampaign
+  partner: activecampaign
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/activecampaign
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.activecampaign.com/?utm_source=unpaid_syndication_website&utm_medium=referral&utm_campaign=zapier_listing
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: Flodesk
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/flodesk
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://flodesk.com/
+- partner_name: Marketo
+  partner: marketo
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/marketo
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://marketo.com/
+- partner_name: monday.com
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/monday
+  direction: third-party
+  category: Project Management
+  partner_url: https://monday.com/
+- partner_name: GetResponse
+  partner: getresponse
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/getresponse
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.getresponse.com/
+- partner_name: AWeber
+  partner: aweber
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/aweber
+  direction: third-party
+  category: Email Newsletters
+  partner_url: http://zpr.io/6S2qW
+- partner_name: Picky Assist 3.0
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/picky-assist-30
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://pickyassist.com/whatsapp-zapier-integration
+- partner_name: Microsoft Dynamics 365 CRM
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/microsoft-dynamics-crm
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://dynamics.microsoft.com/
+- partner_name: Freshsales Suite
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/freshsales-suite
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.freshsales.io/
+- partner_name: Sendlane
+  partner: sendlane
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/sendlane
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://sendlane.com/
+- partner_name: Sendmsg (שלח מסר)
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/sendmsg
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.sendmsg.co.il/
+- partner_name: Constant Contact
+  partner: constant-contact
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/constant-contact
+  direction: third-party
+  category: Email Newsletters
+  partner_url: http://www.constantcontact.com/signup.jsp?pn=zapier
+- partner_name: SharpSpring
+  partner: sharpspring
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/sharpspring
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://sharpspring.com/
+- partner_name: Kajabi
+  partner: kajabi
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/kajabi
+  direction: third-party
+  category: eCommerce
+  partner_url: http://kajabi.com/
+- partner_name: Unisender
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/unisender
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://unisender.com/
+- partner_name: Smoove
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/smoove
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.smoove.io/
+- partner_name: Perfit
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/perfit
+  direction: third-party
+  category: Email
+  partner_url: https://www.myperfit.com/
+- partner_name: QuickMail
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/quickmail
+  direction: third-party
+  category: Drip Emails
+  partner_url: https://quickmail.com/
+- partner_name: EnquiryBox
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/enquirybox
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://internalqa.enquirybox.io/
+- partner_name: Cometly
+  partner: null
+  partner_match: null
+  partner_candidate: zapier
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/cometly
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://zapier.com/cometly.com
+- partner_name: Trello
+  partner: trello
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/trello
+  direction: third-party
+  category: Project Management
+  partner_url: https://trello.com/
+- partner_name: Moosend
+  partner: moosend
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/moosend
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://moosend.com/
+- partner_name: Mailjet
+  partner: mailjet
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/mailjet
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://www.mailjet.com/
+- partner_name: Wix
+  partner: wix
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/wix
+  direction: third-party
+  category: Website Builders
+  partner_url: https://www.wix.com/
+- partner_name: Laposta
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/laposta
+  direction: third-party
+  category: Email Newsletters
+  partner_url: http://laposta.nl/
+templates:
+- title: Send emails via Gmail to new Poptin leads
+  url: https://zapier.com/apps/gmail/integrations/poptin/18440/send-emails-via-gmail-to-new-poptin-leads
+  apps:
+  - poptin
+  - gmail
+- title: Add new Poptin leads to a Google Sheets spreadsheet
+  url: https://zapier.com/apps/google-sheets/integrations/poptin/18441/add-new-poptin-leads-to-a-google-sheets-spreadsheet
+  apps:
+  - poptin
+  - google-sheets
+- title: Subscribe new Poptin leads to MailChimp lists
+  url: https://zapier.com/apps/mailchimp/integrations/poptin/18439/add-new-email-subscribers-to-mailchimp-lists
+  apps:
+  - poptin
+  - mailchimp
+- title: Create new contacts in Constant Contact for new leads in Poptin
+  url: https://zapier.com/apps/constant-contact/integrations/poptin/1608821/create-new-contacts-in-constant-contact-for-new-leads-in-poptin
+  apps:
+  - poptin
+  - constant-contact
+- title: Send POSTs using webhooks for new leads in Poptin
+  url: https://zapier.com/apps/poptin/integrations/webhook/226732/send-posts-using-webhooks-for-new-leads-in-poptin
+  apps:
+  - poptin
+  - webhook
+- title: Add or update Brevo contacts whenever new leads are identified in Poptin
+  url: https://zapier.com/apps/brevo/integrations/poptin/255632430/add-or-update-brevo-contacts-whenever-new-leads-are-identified-in-poptin
+  apps:
+  - poptin
+  - brevo
+- title: Add new Poptin email subscribers to Aweber
+  url: https://zapier.com/apps/aweber/integrations/poptin/18442/add-new-poptin-email-subscribers-to-aweber
+  apps:
+  - poptin
+  - aweber
+- title: Add Trello cards from new Poptin submissions
+  url: https://zapier.com/apps/poptin/integrations/trello/18443/add-trello-cards-from-new-poptin-submissions
+  apps:
+  - poptin
+  - trello
+- title: Add new leads from Poptin to Marketo
+  url: https://zapier.com/apps/marketo/integrations/poptin/18444/add-new-leads-from-poptin-to-marketo
+  apps:
+  - poptin
+  - marketo
+- title: Create prospects on Pardot from new Poptin submissions
+  url: https://zapier.com/apps/pardot/integrations/poptin/18445/create-prospects-on-pardot-from-new-poptin-submissions
+  apps:
+  - poptin
+  - pardot
+- title: Add Salesforce leads from new Poptin submissions
+  url: https://zapier.com/apps/poptin/integrations/salesforce/18446/add-salesforce-leads-from-new-poptin-submissions
+  apps:
+  - poptin
+  - salesforce
+- title: Create or update Intercom leads from new Poptin leads
+  url: https://zapier.com/apps/intercom/integrations/poptin/18447/create-or-update-intercom-leads-from-new-poptin-leads
+  apps:
+  - poptin
+  - intercom
+template_total: 170
