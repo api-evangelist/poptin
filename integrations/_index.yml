@@ -150,7 +150,6 @@
   arazzo: null
 - slug: poptin-monday-com
   label: monday.com
-  partner: monday-com
   partner_name: monday.com
   category: Project Management
   type: marketplace
@@ -364,4 +363,17 @@
   evidence: https://zapier.com/apps/poptin/integrations/laposta
   source: edge
   status: pending-partner-spec
+  arazzo: null
+- slug: poptin-square-own
+  label: Square (own)
+  partner: square
+  partner_name: Square (own)
+  category: Square Online add-ons
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://squareup.com/us/en/app-marketplace/app/Poptin-US
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
   arazzo: null
