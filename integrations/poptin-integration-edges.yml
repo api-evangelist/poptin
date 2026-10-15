@@ -7,6 +7,7 @@ checked:
 - https://monid.ai/tools/poptin
 - https://n8n.io/integrations/poptin/
 - https://zapier.com/apps/poptin/integrations
+- shopify/integrations/shopify-integration-edges.yml
 - square/integrations/square-integration-edges.yml
 summary: null
 marketplace_apps:
@@ -352,6 +353,22 @@ edges:
   direction: third-party
   category: Email Newsletters
   partner_url: http://laposta.nl/
+- partner_name: Shopify (own)
+  partner: shopify
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://apps.shopify.com/poptin
+  mirror_of: shopify/integrations/shopify-integration-edges.yml
+  apps:
+  - Poptin Exit Popup Email Pop Up
+  listing_count: 1
+  detected: '2026-10-15'
+  detected_by: mirror-platform-listings.py
 - partner_name: Square (own)
   partner: square
   partner_match: mirror
