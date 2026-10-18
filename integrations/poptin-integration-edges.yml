@@ -9,6 +9,7 @@ checked:
 - https://zapier.com/api/v4/apps/
 - https://zapier.com/apps/poptin/integrations
 - shopify/integrations/shopify-integration-edges.yml
+- slack/integrations/slack-integration-edges.yml
 - square/integrations/square-integration-edges.yml
 summary: null
 marketplace_apps:
@@ -412,6 +413,23 @@ edges:
     builder: unknown (not in the directory record)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/A0276QBBTR8-poptin-pop-ups-forms
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - Poptin Pop Ups & Forms
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
 templates:
 - title: Send emails via Gmail to new Poptin leads
   url: https://zapier.com/apps/gmail/integrations/poptin/18440/send-emails-via-gmail-to-new-poptin-leads
