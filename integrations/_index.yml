@@ -15,6 +15,7 @@
   evidence: https://zapier.com/apps/google-sheets/integrations/poptin/18441/add-new-poptin-leads-to-a-google-sheets-spreadsheet
   template: https://zapier.com/apps/google-sheets/integrations/poptin/18441/add-new-poptin-leads-to-a-google-sheets-spreadsheet
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: poptin-subscribe-new-poptin-leads-to-mailchimp-lists
@@ -29,6 +30,7 @@
   evidence: https://zapier.com/apps/mailchimp/integrations/poptin/18439/add-new-email-subscribers-to-mailchimp-lists
   template: https://zapier.com/apps/mailchimp/integrations/poptin/18439/add-new-email-subscribers-to-mailchimp-lists
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: poptin-create-new-contacts-in-constant-contact-for-new-leads-in-poptin
@@ -43,6 +45,7 @@
   evidence: https://zapier.com/apps/constant-contact/integrations/poptin/1608821/create-new-contacts-in-constant-contact-for-new-leads-in-poptin
   template: https://zapier.com/apps/constant-contact/integrations/poptin/1608821/create-new-contacts-in-constant-contact-for-new-leads-in-poptin
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: poptin-add-or-update-brevo-contacts-whenever-new-leads-are-identified-in-poptin
@@ -57,6 +60,7 @@
   evidence: https://zapier.com/apps/brevo/integrations/poptin/255632430/add-or-update-brevo-contacts-whenever-new-leads-are-identified-in-poptin
   template: https://zapier.com/apps/brevo/integrations/poptin/255632430/add-or-update-brevo-contacts-whenever-new-leads-are-identified-in-poptin
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: poptin-add-new-poptin-email-subscribers-to-aweber
@@ -71,6 +75,7 @@
   evidence: https://zapier.com/apps/aweber/integrations/poptin/18442/add-new-poptin-email-subscribers-to-aweber
   template: https://zapier.com/apps/aweber/integrations/poptin/18442/add-new-poptin-email-subscribers-to-aweber
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: poptin-add-trello-cards-from-new-poptin-submissions
@@ -85,6 +90,7 @@
   evidence: https://zapier.com/apps/poptin/integrations/trello/18443/add-trello-cards-from-new-poptin-submissions
   template: https://zapier.com/apps/poptin/integrations/trello/18443/add-trello-cards-from-new-poptin-submissions
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: poptin-add-new-leads-from-poptin-to-marketo
@@ -99,269 +105,7 @@
   evidence: https://zapier.com/apps/marketo/integrations/poptin/18444/add-new-leads-from-poptin-to-marketo
   template: https://zapier.com/apps/marketo/integrations/poptin/18444/add-new-leads-from-poptin-to-marketo
   source: template
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-hubspot
-  label: HubSpot
-  partner: hubspot
-  partner_name: HubSpot
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/hubspot
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-pipedrive
-  label: Pipedrive
-  partner: pipedrive
-  partner_name: Pipedrive
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/pipedrive
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-activecampaign
-  label: ActiveCampaign
-  partner: activecampaign
-  partner_name: ActiveCampaign
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/activecampaign
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-flodesk
-  label: Flodesk
-  partner_name: Flodesk
-  category: Email Newsletters
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/flodesk
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-monday-com
-  label: monday.com
-  partner_name: monday.com
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/monday
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-getresponse
-  label: GetResponse
-  partner: getresponse
-  partner_name: GetResponse
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/getresponse
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-picky-assist-3-0
-  label: Picky Assist 3.0
-  partner_name: Picky Assist 3.0
-  category: Phone & SMS
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/picky-assist-30
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-microsoft-dynamics-365-crm
-  label: Microsoft Dynamics 365 CRM
-  partner_name: Microsoft Dynamics 365 CRM
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/microsoft-dynamics-crm
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-freshsales-suite
-  label: Freshsales Suite
-  partner_name: Freshsales Suite
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/freshsales-suite
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-sendlane
-  label: Sendlane
-  partner: sendlane
-  partner_name: Sendlane
-  category: Email Newsletters
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/sendlane
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-sendmsg
-  label: Sendmsg (שלח מסר)
-  partner_name: Sendmsg (שלח מסר)
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/sendmsg
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-sharpspring
-  label: SharpSpring
-  partner: sharpspring
-  partner_name: SharpSpring
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/sharpspring
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-kajabi
-  label: Kajabi
-  partner: kajabi
-  partner_name: Kajabi
-  category: eCommerce
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/kajabi
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-unisender
-  label: Unisender
-  partner_name: Unisender
-  category: Email Newsletters
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/unisender
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-smoove
-  label: Smoove
-  partner_name: Smoove
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/smoove
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-perfit
-  label: Perfit
-  partner_name: Perfit
-  category: Email
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/perfit
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-quickmail
-  label: QuickMail
-  partner_name: QuickMail
-  category: Drip Emails
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/quickmail
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-enquirybox
-  label: EnquiryBox
-  partner_name: EnquiryBox
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/enquirybox
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-cometly
-  label: Cometly
-  partner_name: Cometly
-  category: Ads & Conversion
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/cometly
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-moosend
-  label: Moosend
-  partner: moosend
-  partner_name: Moosend
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/moosend
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-mailjet
-  label: Mailjet
-  partner: mailjet
-  partner_name: Mailjet
-  category: Email Newsletters
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/mailjet
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-wix
-  label: Wix
-  partner: wix
-  partner_name: Wix
-  category: Website Builders
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/wix
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: poptin-laposta
-  label: Laposta
-  partner_name: Laposta
-  category: Email Newsletters
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/poptin/integrations/laposta
-  source: edge
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: poptin-shopify-own
@@ -426,4 +170,292 @@
   source: edge
   relationship: platform-app
   status: not-a-workflow
+  arazzo: null
+- slug: poptin-hubspot
+  label: HubSpot
+  partner: hubspot
+  partner_name: HubSpot
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/hubspot
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-activecampaign
+  label: ActiveCampaign
+  partner: activecampaign
+  partner_name: ActiveCampaign
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/activecampaign
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-pipedrive
+  label: Pipedrive
+  partner: pipedrive
+  partner_name: Pipedrive
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/pipedrive
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-flodesk
+  label: Flodesk
+  partner_name: Flodesk
+  category: Email Newsletters
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/flodesk
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-monday-com
+  label: monday.com
+  partner: monday-com
+  partner_name: monday.com
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/monday
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-getresponse
+  label: GetResponse
+  partner: getresponse
+  partner_name: GetResponse
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/getresponse
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-picky-assist-3-0
+  label: Picky Assist 3.0
+  partner_name: Picky Assist 3.0
+  category: Phone & SMS
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/picky-assist-30
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-microsoft-dynamics-365-crm
+  label: Microsoft Dynamics 365 CRM
+  partner: microsoft-dynamics-365
+  partner_name: Microsoft Dynamics 365 CRM
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/microsoft-dynamics-crm
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-freshsales-suite
+  label: Freshsales Suite
+  partner_name: Freshsales Suite
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/freshsales-suite
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-sendlane
+  label: Sendlane
+  partner: sendlane
+  partner_name: Sendlane
+  category: Email Newsletters
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/sendlane
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-sendmsg
+  label: Sendmsg (שלח מסר)
+  partner_name: Sendmsg (שלח מסר)
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/sendmsg
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-sharpspring
+  label: SharpSpring
+  partner: sharpspring
+  partner_name: SharpSpring
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/sharpspring
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-kajabi
+  label: Kajabi
+  partner: kajabi
+  partner_name: Kajabi
+  category: eCommerce
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/kajabi
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-unisender
+  label: Unisender
+  partner_name: Unisender
+  category: Email Newsletters
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/unisender
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-smoove
+  label: Smoove
+  partner_name: Smoove
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/smoove
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-perfit
+  label: Perfit
+  partner_name: Perfit
+  category: Email
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/perfit
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-quickmail
+  label: QuickMail
+  partner_name: QuickMail
+  category: Drip Emails
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/quickmail
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-enquirybox
+  label: EnquiryBox
+  partner_name: EnquiryBox
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/enquirybox
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-cometly
+  label: Cometly
+  partner_name: Cometly
+  category: Ads & Conversion
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/cometly
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-moosend
+  label: Moosend
+  partner: moosend
+  partner_name: Moosend
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/moosend
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-mailjet
+  label: Mailjet
+  partner: mailjet
+  partner_name: Mailjet
+  category: Email Newsletters
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/mailjet
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-wix
+  label: Wix
+  partner: wix
+  partner_name: Wix
+  category: Website Builders
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/wix
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: poptin-laposta
+  label: Laposta
+  partner_name: Laposta
+  category: Email Newsletters
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/poptin/integrations/laposta
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
   arazzo: null
