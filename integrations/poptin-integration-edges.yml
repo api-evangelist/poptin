@@ -11,6 +11,7 @@ checked:
 - shopify/integrations/shopify-integration-edges.yml
 - slack/integrations/slack-integration-edges.yml
 - square/integrations/square-integration-edges.yml
+- hubspot/integrations/hubspot-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -25,39 +26,6 @@ marketplace_apps:
   actions: []
   searches: []
 edges:
-- partner_name: Shopify (own)
-  partner: shopify
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://apps.shopify.com/poptin
-  mirror_of: shopify/integrations/shopify-integration-edges.yml
-  apps:
-  - Poptin Exit Popup Email Pop Up
-  listing_count: 1
-  detected: '2026-10-15'
-  detected_by: mirror-platform-listings.py
-- partner_name: Square (own)
-  partner: square
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://squareup.com/us/en/app-marketplace/app/Poptin-US
-  mirror_of: square/integrations/square-integration-edges.yml
-  apps:
-  - Poptin
-  listing_count: 1
-  detected: '2026-10-14'
-  detected_by: mirror-platform-listings.py
-  category: Square Online add-ons
 - partner_name: Zapier
   partner: zapier
   partner_match: aggregator
@@ -83,23 +51,6 @@ edges:
     builder: unknown (not in the directory record)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
-- partner_name: Slack (own)
-  partner: slack
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://slack.com/marketplace/A0276QBBTR8-poptin-pop-ups-forms
-  mirror_of: slack/integrations/slack-integration-edges.yml
-  apps:
-  - Poptin Pop Ups & Forms
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Slack app
 - partner_name: Brevo
   partner: brevo
   partner_match: name-exact
@@ -460,6 +411,73 @@ edges:
   direction: third-party
   category: Email Newsletters
   partner_url: http://laposta.nl/
+- partner_name: Shopify (own)
+  partner: shopify
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://apps.shopify.com/poptin
+  mirror_of: shopify/integrations/shopify-integration-edges.yml
+  apps:
+  - Poptin Exit Popup Email Pop Up
+  listing_count: 1
+  detected: '2026-10-15'
+  detected_by: mirror-platform-listings.py
+- partner_name: Square (own)
+  partner: square
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://squareup.com/us/en/app-marketplace/app/Poptin-US
+  mirror_of: square/integrations/square-integration-edges.yml
+  apps:
+  - Poptin
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Square Online add-ons
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/A0276QBBTR8-poptin-pop-ups-forms
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - Poptin Pop Ups & Forms
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
+- partner_name: HubSpot (own)
+  partner: hubspot
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://ecosystem.hubspot.com/marketplace/listing/poptin-228517
+  mirror_of: hubspot/integrations/hubspot-integration-edges.yml
+  apps:
+  - Poptin - Pop Ups and Forms
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: LEAD_SCORING_ROUTING
 templates:
 - title: Send emails via Gmail to new Poptin leads
   url: https://zapier.com/apps/gmail/integrations/poptin/18440/send-emails-via-gmail-to-new-poptin-leads

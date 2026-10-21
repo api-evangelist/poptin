@@ -108,31 +108,6 @@
   relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
-- slug: poptin-shopify-own
-  label: Shopify (own)
-  partner: shopify
-  partner_name: Shopify (own)
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://apps.shopify.com/poptin
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
-- slug: poptin-square-own
-  label: Square (own)
-  partner: square
-  partner_name: Square (own)
-  category: Square Online add-ons
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://squareup.com/us/en/app-marketplace/app/Poptin-US
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
 - slug: poptin-zapier
   label: Zapier
   partner: zapier
@@ -156,19 +131,6 @@
     app_slug: poptin
     beta: false
     builder: unknown (not in the directory record)
-  status: not-a-workflow
-  arazzo: null
-- slug: poptin-slack-own
-  label: Slack (own)
-  partner: slack
-  partner_name: Slack (own)
-  category: Slack app
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://slack.com/marketplace/A0276QBBTR8-poptin-pop-ups-forms
-  source: edge
-  relationship: platform-app
   status: not-a-workflow
   arazzo: null
 - slug: poptin-hubspot
@@ -458,4 +420,55 @@
   source: edge
   relationship: ipaas-bridge
   status: pending-partner-spec
+  arazzo: null
+- slug: poptin-shopify-own
+  label: Shopify (own)
+  partner: shopify
+  partner_name: Shopify (own)
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://apps.shopify.com/poptin
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: poptin-square-own
+  label: Square (own)
+  partner: square
+  partner_name: Square (own)
+  category: Square Online add-ons
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://squareup.com/us/en/app-marketplace/app/Poptin-US
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: poptin-slack-own
+  label: Slack (own)
+  partner: slack
+  partner_name: Slack (own)
+  category: Slack app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://slack.com/marketplace/A0276QBBTR8-poptin-pop-ups-forms
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: poptin-hubspot-own
+  label: HubSpot (own)
+  partner: hubspot
+  partner_name: HubSpot (own)
+  category: LEAD_SCORING_ROUTING
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://ecosystem.hubspot.com/marketplace/listing/poptin-228517
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
   arazzo: null
