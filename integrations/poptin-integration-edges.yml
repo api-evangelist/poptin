@@ -13,6 +13,7 @@ checked:
 - square/integrations/square-integration-edges.yml
 - hubspot/integrations/hubspot-integration-edges.yml
 - adobe-commerce/integrations/adobe-commerce-integration-edges.yml
+- wix/integrations/wix-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -496,6 +497,30 @@ edges:
   detected: '2026-10-22'
   detected_by: mirror-platform-listings.py
   category: Adobe Commerce Marketplace extension
+- partner_name: Wix (own)
+  partner: wix
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.wix.com/app-market/developer/poptin-ltd
+  mirror_of: wix/integrations/wix-integration-edges.yml
+  apps:
+  - 'WhatsApp & Chat Buttons: Chaty'
+  - Poptin Pop Ups Email Marketing
+  - Chatway AI Live Chat, WhatsApp
+  - Coupon X Discount Code Pop Ups
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: Chat
+  badges:
+  - WIX_CHOICE
+  publisher_verified:
+  - Verified by Wix
 templates:
 - title: Send emails via Gmail to new Poptin leads
   url: https://zapier.com/apps/gmail/integrations/poptin/18440/send-emails-via-gmail-to-new-poptin-leads

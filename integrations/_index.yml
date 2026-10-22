@@ -485,3 +485,16 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: poptin-wix-own
+  label: Wix (own)
+  partner: wix
+  partner_name: Wix (own)
+  category: Chat
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.wix.com/app-market/developer/poptin-ltd
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
