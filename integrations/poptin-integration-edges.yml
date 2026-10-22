@@ -12,6 +12,7 @@ checked:
 - slack/integrations/slack-integration-edges.yml
 - square/integrations/square-integration-edges.yml
 - hubspot/integrations/hubspot-integration-edges.yml
+- adobe-commerce/integrations/adobe-commerce-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -478,6 +479,23 @@ edges:
   detected: '2026-10-21'
   detected_by: mirror-platform-listings.py
   category: LEAD_SCORING_ROUTING
+- partner_name: Adobe Commerce (own)
+  partner: adobe-commerce
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://commercemarketplace.adobe.com/poptin-module-magento2.html
+  mirror_of: adobe-commerce/integrations/adobe-commerce-integration-edges.yml
+  apps:
+  - 'Poptin: Email Marketing Automation, Newsletter & Exit Pop Ups'
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: Adobe Commerce Marketplace extension
 templates:
 - title: Send emails via Gmail to new Poptin leads
   url: https://zapier.com/apps/gmail/integrations/poptin/18440/send-emails-via-gmail-to-new-poptin-leads
