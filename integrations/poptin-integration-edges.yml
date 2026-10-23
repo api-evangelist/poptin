@@ -17,6 +17,7 @@ checked:
 - https://hex.pm/api
 - https://packagist.org/packages
 - https://pub.dev/api
+- intercom/integrations/intercom-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -416,6 +417,45 @@ edges:
   direction: third-party
   category: Email Newsletters
   partner_url: http://laposta.nl/
+- partner_name: Packagist
+  partner: packagist
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (PHP)
+  evidence: https://packagist.org/packages/poptin/module-magento2
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Packagist (public registry JSON)
+    spec_file: null
+    language: PHP
+    packages:
+    - name: poptin/module-magento2
+      version: 1.1.9
+      released: '2026-07-15'
+      released_field: time
+      lapsed: false
+      page: https://packagist.org/packages/poptin/module-magento2
+      repo_leg: github-org:poptins
+      publisher_leg: email:poptin.com
+      matched_by: domain
+    - name: poptin/poptin
+      version: 2.0.6
+      released: '2025-04-18'
+      released_field: time
+      lapsed: false
+      page: https://packagist.org/packages/poptin/poptin
+      repo_leg: github-org:poptins
+      publisher_leg: org:poptin
+      matched_by: github-org
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-php-dart-elixir-package-registries.py
+    detected: '2026-10-22'
+  detected_by: sweep-php-dart-elixir-package-registries.py
+  first_seen: '2026-10-22'
 - partner_name: Shopify (own)
   partner: shopify
   partner_match: mirror
@@ -524,45 +564,23 @@ edges:
   - WIX_CHOICE
   publisher_verified:
   - Verified by Wix
-- partner_name: Packagist
-  partner: packagist
-  partner_match: register
-  type: register
-  direction: provider-built
-  category: official SDK (PHP)
-  evidence: https://packagist.org/packages/poptin/module-magento2
-  channel: package-registry
-  relationship: distribution-channel
-  contract_reference:
-    register: Packagist (public registry JSON)
-    spec_file: null
-    language: PHP
-    packages:
-    - name: poptin/module-magento2
-      version: 1.1.9
-      released: '2026-07-15'
-      released_field: time
-      lapsed: false
-      page: https://packagist.org/packages/poptin/module-magento2
-      repo_leg: github-org:poptins
-      publisher_leg: email:poptin.com
-      matched_by: domain
-    - name: poptin/poptin
-      version: 2.0.6
-      released: '2025-04-18'
-      released_field: time
-      lapsed: false
-      page: https://packagist.org/packages/poptin/poptin
-      repo_leg: github-org:poptins
-      publisher_leg: org:poptin
-      matched_by: github-org
-    current: true
-    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
-      24 months'
-    detected_by: sweep-php-dart-elixir-package-registries.py
-    detected: '2026-10-22'
-  detected_by: sweep-php-dart-elixir-package-registries.py
-  first_seen: '2026-10-22'
+- partner_name: Intercom (own)
+  partner: intercom
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.intercom.com/app-store/?app_package_code=poptin-app
+  mirror_of: intercom/integrations/intercom-integration-edges.yml
+  apps:
+  - Poptin
+  listing_count: 1
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Marketing & Campaigns
 templates:
 - title: Send emails via Gmail to new Poptin leads
   url: https://zapier.com/apps/gmail/integrations/poptin/18440/send-emails-via-gmail-to-new-poptin-leads
